@@ -4,13 +4,6 @@ import serial
 class component:
 	def __init__(self, comp):
 		self.comp=comp
-		'''try:
-			print 'Initializing', comp,'.'
-			self.ser=Serial('/dev/ttyACM0')
-			print 'Serial connection established.'
-		except serial.serialutil.SerialException:
-			print "Didn't find Arduino on port"
-			return None'''
 
 	def connect(self):
 		try:
