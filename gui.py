@@ -24,9 +24,11 @@ class MyGUI:
 			self.status_var.set("LED is on.")
 
 led=controller.component('led')
-root=Tk()
-gui=MyGUI(root)
-root.mainloop()
+connection_status=led.connect()
+if not connection_status:
+	root=Tk()
+	gui=MyGUI(root)
+	root.mainloop()
 
 
 
