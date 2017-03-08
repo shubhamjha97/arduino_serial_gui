@@ -19,7 +19,7 @@ class component:
 			print 'Serial connection established.'
 			return 0
 		except serial.serialutil.SerialException:
-			print "Didn't find Arduino on port"
+			print "Didn't find Arduino on port. Check your connection or make sure that some other process is not using the serial port."
 			return 1
 
 	def ip(self, control):
