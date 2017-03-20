@@ -3,7 +3,7 @@ import serial
 
 class component:
 	def __init__(self, comp):
-		self.comp=comp
+		self.comp=compb
 
 	def connect(self):
 		try:
